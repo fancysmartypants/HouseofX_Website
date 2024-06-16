@@ -48,7 +48,7 @@ const MySkills = () => {
       </div>
 
       {/* SKILLS */}
-      <div className="md:flex md:justify-between mt-25 gap-35">
+      <div className="md:flex md:justify-between mt-28 gap-35">
         {/* EXPERIENCE */}
         <motion.div
           className="md:w-1/3 mt-1"
@@ -64,7 +64,7 @@ const MySkills = () => {
           <div className="relative h-42">
             <div className="z-10">
               <p className="font-averia font-semibold text-5xl">Graphic Design</p>
-              <p className="font-averia font-semibold text-3xl mt-20">
+              <p className="font-averia font-semibold text-3xl mt-25">
                 Vector graphics, non-vector graphics, oil, acrylics, pastel on wood, canvas or paper...
               </p>
             </div>
@@ -91,7 +91,7 @@ const MySkills = () => {
           <div className="relative h-42">
             <div className="z-10">
               <p className="font-averia font-semibold text-5xl">Custom Solutions</p>
-              <p className="font-averia font-semibold text-3xl mt-20">
+              <p className="font-averia font-semibold text-3xl mt-25">
                 Conducting research and customizing a solution to your needs.
               </p>
             </div>
@@ -105,7 +105,7 @@ const MySkills = () => {
 
     {/* EXPERIENCE */}
     <motion.div
-          className="md:w-1/3 mt-10"
+          className="md:w-1/3 mt-15"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -117,8 +117,8 @@ const MySkills = () => {
         >
           <div className="relative h-42">
             <div className="z-10">
-              <p className="font-averia font-semibold text-5xl">Ideas</p>
-              <p className="font-averia font-semibold text-3xl mt-32">
+              <p className="font-averia font-semibold text-5xl mt-10">Ideas</p>
+              <p className="font-averia font-semibold text-3xl mt-25">
               Creating solutions with an emphasis on ethics and contents considering social and cultural impact.
               </p>
             </div>

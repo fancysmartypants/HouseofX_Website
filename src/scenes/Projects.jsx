@@ -22,12 +22,10 @@ const Project = ({ title, url,subtitle }) => {
 
   return (
     <motion.div variants={projectVariant} className="relative">
-      <div className={overlayStyles}>
-        <p className="text-2xl font-averia"><a href={url} target="_blank" rel="noopener noreferrer"> {title}</a> </p>
-        <p className="font-averia mt-7">
-          <a href={url} target="_blank" rel="noopener noreferrer"> {subtitle} </a>
-        </p>
-      </div>
+      <a href={url} target="_blank" rel="noopener noreferrer" className={overlayStyles}>
+        <p className="text-2xl font-averia">{title}</p>
+        <p className="font-averia mt-7">{subtitle}</p>
+      </a>
         <img src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} />
     </motion.div>
   );

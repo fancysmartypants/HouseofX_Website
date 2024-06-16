@@ -11,7 +11,7 @@ const SocialMediaIcons = () => {
       </a>
       <a
         className="hover:opacity-50 transition duration-500"
-        href="https://www.twitter.com"
+        href="http://www.twitter.com/houseofx_agency"
         target="_blank"
         rel="noreferrer"
       >
@@ -27,7 +27,7 @@ const SocialMediaIcons = () => {
       </a>
       <a
         className="hover:opacity-50 transition duration-500"
-        href="https://www.instagram.com/house.ofx/?igsh=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"
+        href="https://www.instagram.com/house.ofx"
         target="_blank"
         rel="noreferrer"
       >
