@@ -28,18 +28,20 @@ const MySkills = () => {
           </p>
         </motion.div>
 
-        <div className="mt-16 md:mt-0">
+        <div className="mt-20 xs:mt-20 md:mt-0">
           {isAboveLarge ? (
             <div
               className="hover:filter hover:saturate-200 transition duration-400 relative z-0 ml-20 before:absolute before:-top-10 before:-left-10
               before:w-full before:h-full before:border-2 before:border-primary-yellow before:z-[-1]"
             >
               <img
-                alt="skills"
-                className="z-10"
-                src="assets/skills-image.png"
-                width="1000"
+              alt="A blue lizard illustration created on Procreate"
+              className="z-10"
+              src="assets/skills-image.png"
+              width="1000"
               />
+              
+
             </div>
           ) : (
             <img alt="skills" className="z-10" src="assets/skills-image.png" />
@@ -48,8 +50,8 @@ const MySkills = () => {
       </div>
 
       {/* SKILLS */}
-      <div className="md:flex md:justify-between mt-28 gap-35">
-        {/* EXPERIENCE */}
+      <div className="md:flex md:justify-between xs:gap-10 md:gap-10 mt-28 gap-45 ">
+        {/* Graphic Design */}
         <motion.div
           className="md:w-1/3 mt-1"
           initial="hidden"
@@ -63,22 +65,22 @@ const MySkills = () => {
         >
           <div className="relative h-42">
             <div className="z-10">
-              <p className="font-averia font-semibold text-5xl">Graphic Design</p>
-              <p className="font-averia font-semibold text-3xl mt-25">
-                Vector graphics, non-vector graphics, oil, acrylics, pastel on wood, canvas or paper...
-              </p>
+              <h1 className="font-averia font-semibold text-5xl">Graphic Design</h1>
+              <h2 className="font-averia font-semibold text-3xl mt-25">
+                Vector and Non-Vector Graphics, Digital and Mixed Media, Oil, Acrylics, and Pastels on Wood, Canvas or Paper...
+              </h2>
             </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
+      
           </div>
           <p className="mt-20 font-averia">
-          Since her kindergarten years in Shanghai, she has amazed everyone with her drawings, and now she is using the digital canvas to continue her expressions.
+          Since her kindergarten years in Shanghai, her drawings have captivated audiences. Today she brings her creativity to life on the digital canvas. 
         
           </p>
         </motion.div>
 
-     {/* EXPERIENCE */}
+     {/* Custom Solutions */}
      <motion.div
-          className="md:w-1/3 mt-10"
+          className="md:w-1/3 mt-20"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -90,22 +92,21 @@ const MySkills = () => {
         >
           <div className="relative h-42">
             <div className="z-10">
-              <p className="font-averia font-semibold text-5xl">Custom Solutions</p>
-              <p className="font-averia font-semibold text-3xl mt-25">
-                Conducting research and customizing a solution to your needs.
-              </p>
+              <h1 className="font-averia font-semibold text-5xl">Custom Solutions</h1>
+              <h2 className="font-averia font-semibold text-3xl mt-25">
+                Tailored research and bespoke solutions to meet unique needs. 
+              </h2>
             </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
+   
           </div>
           <p className="mt-20 font-averia">
-          Her most fluent language is science, a disciplined process through which she borrows to help businesses communicate the complex emotions of their brands with unparalleled clarity.
-        
+          Her most fluent language is science, a disciplined approach she leverages to use research, hypothesis and data to help businesses clearly express the complex emotions of their brands. With a background in systems biology, she brings a unique perspective to designing content management systems, skill tracking systems, and inventory systems to help businesses smoothly integrate their operations and maintain precise control over their assets.
           </p>
         </motion.div>
 
-    {/* EXPERIENCE */}
+    {/* Ideas */}
     <motion.div
-          className="md:w-1/3 mt-15"
+          className="md:w-1/3 mt-20"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -117,16 +118,15 @@ const MySkills = () => {
         >
           <div className="relative h-42">
             <div className="z-10">
-              <p className="font-averia font-semibold text-5xl mt-10">Ideas</p>
-              <p className="font-averia font-semibold text-3xl mt-25">
-              Creating solutions with an emphasis on ethics and contents considering social and cultural impact.
-              </p>
+              <h1 className="font-averia font-semibold text-5xl mt-10">Ideas</h1>
+              <h2 className="font-averia font-semibold text-3xl mt-25">
+              Creating solutions and contents with an emphasis on ethics and considering social and cultural impact.
+              </h2>
             </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
+     
           </div>
           <p className="mt-20 font-averia">
-            Rono has multicultural experiences across three different continents and she has worked in the largest bookstore in Los Angeles, and she is surrounded by brilliant people filled with tons of great ideas.
-        
+          Rono is passionate about creating ethical solutions that consider social and cultural impacts. With multicultural experiences across three continents and a diverse professional background, including working at the largest bookstore in Los Angeles, she is constantly surrounded by brilliant minds and innovative ideas. Her global perspective and rich experiences inspire her to craft thoughtful, impactful solutions for every project.
           </p>
         </motion.div>
 

@@ -18,7 +18,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="contact py-48">
+    <section id="contact" className="contact py-20 sm:py-10 ">
       {/* HEADINGS */}
       <motion.div
         initial="hidden"
@@ -29,13 +29,13 @@ const Contact = () => {
           hidden: { opacity: 0, x: 50 },
           visible: { opacity: 1, x: 0 },
         }}
-        className="flex justify-end w-full"
+        className="flex justify-center xs:justify-center w-full"
       >
         <div>
-          <p className="font-averia font-semibold text-4xl">
-            <span className="text-primary-yellow">CONTACT ME</span> TO GET STARTED
+          <p className="font-averia font-semibold text-4xl sm:mx-4">
+            <span className="text-primary-red">REACH OUT</span> TO BEGIN YOUR <em>DIGITAL</em> TRANSFORMATION
           </p>
-          <div className="flex md:justify-end my-5">
+          <div className="flex md:justify-center my-5">
             <LineGradient width="w-1/2" />
           </div>
         </div>
@@ -127,10 +127,10 @@ const Contact = () => {
             )}
 
             <button
-              className="p-5 font-averia bg-primary-yellow font-semibold text-primary-blue mt-5 hover:bg-primary-red hover:text-white transition duration-500"
+              className="p-5 font-averia bg-primary-yellow font-semibold text-primary-blue mt-5 hover:bg-primary-red hover:text-primary-yellow transition duration-500"
               type="submit"
             >
-              SEND ME A MESSAGE.
+              LET'S CREATE SOMETHING AMAZING!
             </button>
           </form>
         </motion.div>

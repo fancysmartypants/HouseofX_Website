@@ -34,9 +34,11 @@ const Testimonials = () => {
 
       {/* TESTIMONIALS */}
       <div className="md:flex md:justify-between gap-8 mt-10">
+
+        
         <motion.div
-          className="mx-auto relative bg-primary-blue max-w-[500px] h-[1000px] flex flex-col justify-end p-16 mt-52
-            before:relative before:top-[-70px] before:-ml-[110px] before:left-1/2 before:content-person1"
+          className="mx-auto relative bg-primary-blue max-w-[500px] h-[1200px] flex flex-col justify-start p-16 mt-100
+            before:relative before:top-[-30px] xs:before:top-[-20px] before:-ml-[110px] before:left-1/2 before:content-person1"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -46,14 +48,14 @@ const Testimonials = () => {
             visible: { opacity: 1, scale: 1 },
           }}
         >
-          <p className="font-averia text-6xl">"</p>
-          <p className="font-averia text-center text-xl">
+          <p className="font-averia text-6xl mt--25">"</p>
+          <p className="font-averia text-center text-xl mt-29">
             <a href="https://loveandautism.com/event-program/" target="_blank" rel="noopener noreferrer"> 
             Rono is forging a unique path that highlights the intersection of seemingly disparate fields, demonstrating the uniqueness of career roadmaps for neurodiverse individuals, and importance of support to those navigating the complexities of multiple identities, thereby enhancing human understanding and driving societal progress. 
             </a>
           </p>
-          <p className="font-averia mt-10 text-xl"> - LOVE & AUTISM 
-          </p>
+          <h2 className="font-averia mt-8 text-xl"> - LOVE & AUTISM 
+          </h2>
         </motion.div>
 
     
