@@ -15,7 +15,7 @@ const projectVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title }) => {
+const Project = ({ title, url,subtitle }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
   const projectTitle = title.split(" ").join("-").toLowerCase();
@@ -23,20 +23,19 @@ const Project = ({ title }) => {
   return (
     <motion.div variants={projectVariant} className="relative">
       <div className={overlayStyles}>
-        <p className="text-2xl font-playfair">{title}</p>
-        <p className="mt-7">
-          Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla
-          porttitor accumsan tincidunt.
+        <p className="text-2xl font-averia"><a href={url} target="_blank" rel="noopener noreferrer"> {title}</a> </p>
+        <p className="font-averia mt-7">
+          <a href={url} target="_blank" rel="noopener noreferrer"> {subtitle} </a>
         </p>
       </div>
-      <img src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} />
+        <img src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} />
     </motion.div>
   );
 };
 
 const Projects = () => {
   return (
-    <section id="projects" className="pt-48 pb-48">
+    <section id="projects" className="pt-48 pb-48 mt-25">
       {/* HEADINGS */}
       <motion.div
         className="md:w-2/5 mx-auto text-center"
@@ -50,17 +49,15 @@ const Projects = () => {
         }}
       >
         <div>
-          <p className="font-playfair font-semibold text-4xl">
-            <span className="text-red">PRO</span>JECTS
+          <p className="font-averia font-semibold text-4xl">
+            <span className="text-primary-red">PRO</span>JECTS
           </p>
           <div className="flex justify-center mt-5">
             <LineGradient width="w-2/3" />
           </div>
         </div>
-        <p className="mt-10 mb-10">
-          Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-          fames odio in at. At magna ornare dictum lectus. Purus massa morbi
-          purus nec eget eleifend ut elit.
+        <p className="mt-10 mb-10 text-xl font-averia">
+          A growing list of projects. More is coming. 
         </p>
       </motion.div>
 
@@ -75,27 +72,31 @@ const Projects = () => {
         >
           {/* ROW 1 */}
           <div
-            className="flex justify-center text-center items-center p-10 bg-red
-              max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
+            className="flex justify-center text-center items-center p-10 bg-primary-red
+              max-w-[600px] max-h-[600px] text-2xl font-averia font-semibold"
           >
-            BEAUTIFUL USER INTERFACES
+            VISUALS EXPERIENCES
           </div>
-          <Project title="Project 1" />
-          <Project title="Project 2" />
+
+
+          
+          <Project title="Rono Dumplings" url="https://ronoxia.wixsite.com/rono-dumplings" subtitle="A delivery only food brand."/>
+          <Project title="RoBo Dumplings" url="https://fancysmartypants.github.io/RoBo-Dumplings-Website/" subtitle="A frozen dumplings brand."/>
 
           {/* ROW 2 */}
-          <Project title="Project 3" />
-          <Project title="Project 4" />
-          <Project title="Project 5" />
+          <Project title="Neurodiversity Blog" url="https://ronoxxx.wixsite.com/lifeofxia" subtitle="Autism awareness."/>
+          <Project title="Rock Paper Scissor" url="https://fancysmartypants.github.io/rock-paper-scissor-console-game/" subtitle="A digital childhood game."/>
+          <Project title="Personal Website" url="https://ronoxxx.wixsite.com/ronoxia/art" subtitle="Showcasing works of art." />
 
           {/* ROW 3 */}
-          <Project title="Project 6" />
-          <Project title="Project 7" />
+          <Project title="IG Reel" url="https://www.instagram.com/reel/CYIKy9yJHJC/?igsh=MTc4MmM1YmI2Ng%3D%3D" subtitle="Egg nog recipe."/>
+          <Project title="Content writing" url="https://jchenwan5.wixsite.com/digitalmindfulness/projects-8" subtitle=""/>
+
           <div
-            className="flex justify-center text-center items-center p-10 bg-blue
-              max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
+            className="flex justify-center text-center items-center p-10 bg-primary-blue
+              max-w-[600px] max-h-[600px] text-2xl font-averia font-semibold"
           >
-            SMOOTH USER EXPERIENCE
+            MEANINGFUL DESIGNS
           </div>
         </motion.div>
       </div>

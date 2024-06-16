@@ -10,6 +10,8 @@ import useMediaQuery from "./hooks/useMediaQuery";
 import { useEffect, useState } from "react";
 import Testimonials from "./scenes/Testimonials";
 import { motion } from "framer-motion";
+import './fonts.css';
+
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
@@ -35,7 +37,7 @@ function App() {
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
       />
-      <div className="w-5/6 mx-auto md:h-full">
+      <div className="w-5/6 mx-auto ">
         {isDesktop && (
           <DotGroup
             selectedPage={selectedPage}
@@ -51,7 +53,7 @@ function App() {
         </motion.div>
       </div>
       <LineGradient />
-      <div className="w-5/6 mx-auto md:h-full ">
+      <div className="w-5/6 mx-auto  ">
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
@@ -71,7 +73,8 @@ function App() {
         </motion.div>
       </div>
       <LineGradient />
-      <div className="w-5/6 mx-auto md:h-full">
+      
+      <div className="w-5/6 mx-auto">
         <motion.div
           margin="0 0 -200px 0"
           amount="all"

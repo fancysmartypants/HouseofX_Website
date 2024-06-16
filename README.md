@@ -1,7 +1,6 @@
-# React Portfolio App
+# Welcome to the official GitHub repository for House of X
+## A creative technology and design agency. 
 
-Build a Responsive React Portfolio Website | Tailwind, Framer-Motion, & React Hook Form
+We specialize in merging new technology with innovative branding strategies to create impactful brands and memorable experiences.
 
-Video: https://www.youtube.com/watch?v=JSJ8ftr92Vw
-
-For all related questions and discussions about this project, check out the discord: https://discord.gg/2FfPeEk2mX
+This website is built with React, Tailwind, Framer-Motion, & React Hook Form.

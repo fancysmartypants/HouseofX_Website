@@ -5,24 +5,23 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "deep-blue": "#010026",
-        blue: "#2CBCE9",
-        red: "#DC4492",
-        yellow: "#FDCC49",
-        grey: "#ededed",
-        "dark-grey": "#757575",
-        "opaque-black": "rgba(0,0,0,0.35)",
+        "primary-blue": "#0055A4",
+        "primary-red": "#D32E2E",
+        "primary-yellow": "#FFCC00",
+        "black": "#000000",
+        "white": "#FFFFFF",
+        "grey": "#E0E0E0",
+        "dark-grey": "#333333",
       },
       backgroundImage: (theme) => ({
-        "gradient-rainbow":
-          "linear-gradient(81.66deg, #00B5EE 7.21%, #FF45A4 45.05%, #FFBA00 78.07%)",
+        "gradient-bauhaus":
+        "linear-gradient(135deg, #0055A4 25%, #D32E2E 50%, #FFCC00 75%)",
 
-        "gradient-rainblue":
-          "linear-gradient(90deg, #24CBFF 14.53%, #FC59FF 69.36%, #FFBD0C 117.73%)",
       }),
       fontFamily: {
-        playfair: ["Playfair Display", "serif"],
-        opensans: ["Open Sans", "sans-serif"],
+        averia: ["'Averia Serif Libre'", "serif"],
+        major: ["'Major Mono Display'", "monospace"],
+        custom: ["'MyCustomFont'", "sans-serif"],
       },
       content: {
         brush: "url('./assets/brush.png')",
