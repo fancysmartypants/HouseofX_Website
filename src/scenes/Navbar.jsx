@@ -3,8 +3,23 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from "../hooks/useMediaQuery";
 import '../fonts.css';
 
-const Link = ({ page, selectedPage, setSelectedPage }) => {
+const Link = ({ page, selectedPage, setSelectedPage,externalLink }) => {
   const lowerCasePage = page.toLowerCase();
+
+  if (externalLink){
+    return (
+      <a
+        className={`${
+          selectedPage === lowerCasePage ? "text-primary-yellow" : ""
+        } hover:text-yellow transition duration-500`}
+        href={externalLink}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {page}
+      </a>
+    );
+  }
   return (
     <AnchorLink
       className={`${
@@ -30,7 +45,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
 
         {/* DESKTOP NAV */}
         {isDesktop ? (
-          <div className="flex justify-between gap-16 font-averia text-sm font-semibold">
+          <div className="flex justify-between gap-16 font-averia text-xl font-semibold">
             <Link
               page="Home"
               selectedPage={selectedPage}
@@ -56,6 +71,12 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
+            <Link
+              page="Learning Center"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+              externalLink="https://learn.houseofx.co"
+            />
           </div>
         ) : (
           <button
@@ -77,7 +98,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
             </div>
 
             {/* MENU ITEMS */}
-            <div className="flex flex-col gap-20 ml-[33%] text-2xl text-deep-blue">
+            <div className="flex flex-col gap-10 ml-[13%] text-2xl text-deep-blue">
               <Link
                 page="Home"
                 selectedPage={selectedPage}
@@ -102,6 +123,12 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                 page="Contact"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
+              />
+              <Link
+                page="Learning Center"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+                externalLink="https://learn.houseofx.co"
               />
             </div>
           </div>
