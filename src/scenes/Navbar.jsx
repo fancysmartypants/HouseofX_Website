@@ -2,6 +2,8 @@ import { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from "../hooks/useMediaQuery";
 import '../fonts.css';
+import LogoIcon from '../assets/x-house-logo.svg';
+
 
 const Link = ({ page, selectedPage, setSelectedPage,externalLink }) => {
   const lowerCasePage = page.toLowerCase();
@@ -41,7 +43,8 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   return (
     <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
       <div className="flex items-center justify-between mx-auto w-5/6">
-        <h4 className="font-custom text-3xl font-bold">House of X</h4>
+        {/* <h4 className="font-custom text-3xl font-bold">X House</h4> */}
+        <img src={LogoIcon} alt="X House Logo" className="h-5 w-auto" />
 
         {/* DESKTOP NAV */}
         {isDesktop ? (

@@ -10,7 +10,7 @@ body,
 #root,
 .app {
   height: 100%;
-  background-color: rgb(250, 246, 221); /*bauhaus inspired color*/
+  background-color: #F3EFD9; /*updated bauhaus inspired color*/
   @apply text-black;
 }
 

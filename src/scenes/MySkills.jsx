@@ -65,17 +65,17 @@ const MySkills = () => {
         >
           <div className="relative h-42">
             <div className="z-10">
-              <h1 className="font-averia font-semibold text-5xl">Graphic Design</h1>
-              <h2 className="font-averia font-semibold text-3xl mt-25">
-                Vector and Non-Vector Graphics, Digital and Mixed Media, Oil, Acrylics, and Pastels on Wood, Canvas or Paper...
-              </h2>
+              <h1 className="font-averia font-semibold text-5xl">Innovative Problem-Solving</h1>
+              <p className="font-averia font-semibold text-3xl mt-25">
+                Rono’s unique perspective as someone who is both dyslexic and autistic has shaped her ability to communicate complex ideas through visual and scientific expressions. Starting with visual storytelling, she has evolved this skill into a sophisticated approach to problem-solving in data science and machine learning.
+              </p>
             </div>
       
           </div>
-          <p className="mt-20 font-averia">
+          {/* <p className="mt-20 font-averia">
           Since her kindergarten years in Shanghai, her drawings have captivated audiences. Today she brings her creativity to life on the digital canvas. 
         
-          </p>
+          </p> */}
         </motion.div>
 
      {/* Custom Solutions */}
@@ -92,16 +92,16 @@ const MySkills = () => {
         >
           <div className="relative h-42">
             <div className="z-10">
-              <h1 className="font-averia font-semibold text-5xl">Custom Solutions</h1>
-              <h2 className="font-averia font-semibold text-3xl mt-25">
-                Tailored research and bespoke solutions to meet unique needs. 
-              </h2>
+              <h1 className="font-averia font-semibold text-5xl">Data Science Solutions</h1>
+              <p className="font-averia font-semibold text-3xl mt-25">
+              Rono excels in delivering tailored research and machine learning solutions designed to meet the specific needs of organizations. With a solid foundation in systems biology and extensive experience in data-driven environments, she has designed advanced content management systems, skill-tracking platforms, and inventory systems that enhance operational efficiency and strategic decision-making.
+              </p>
             </div>
    
           </div>
-          <p className="mt-20 font-averia">
+          {/* <p className="mt-20 font-averia">
           Her most fluent language is science, a disciplined approach she leverages to use research, hypothesis and data to help businesses clearly express the complex emotions of their brands. With a background in systems biology, she brings a unique perspective to designing content management systems, skill tracking systems, and inventory systems to help businesses smoothly integrate their operations and maintain precise control over their assets.
-          </p>
+          </p> */}
         </motion.div>
 
     {/* Ideas */}
@@ -118,16 +118,16 @@ const MySkills = () => {
         >
           <div className="relative h-42">
             <div className="z-10">
-              <h1 className="font-averia font-semibold text-5xl mt-10">Ideas</h1>
-              <h2 className="font-averia font-semibold text-3xl mt-25">
-              Creating solutions and contents with an emphasis on ethics and considering social and cultural impact.
-              </h2>
+              <h1 className="font-averia font-semibold text-5xl mt-10">Ethical and Impactful Innovation</h1>
+              <p className="font-averia font-semibold text-3xl mt-25">
+                Rono is deeply committed to creating technologically advanced yet ethically sound solutions. With multicultural experiences across three continents and a rich professional background, including her work at the largest bookstore in Los Angeles, she brings a global perspective and an ethical framework to every project. Her passion for ethical AI and the societal implications of technology ensures that her solutions are as culturally aware as they are innovative.
+              </p>
             </div>
      
           </div>
-          <p className="mt-20 font-averia">
-          Rono is passionate about creating ethical solutions that consider social and cultural impacts. With multicultural experiences across three continents and a diverse professional background, including working at the largest bookstore in Los Angeles, she is constantly surrounded by brilliant minds and innovative ideas. Her global perspective and rich experiences inspire her to craft thoughtful, impactful solutions for every project.
-          </p>
+          {/* <p className="mt-20 font-averia">
+            Rono is deeply committed to creating technologically advanced yet ethically sound solutions. With multicultural experiences across three continents and a rich professional background, including her work at the largest bookstore in Los Angeles, she brings a global perspective and an ethical framework to every project. Her passion for ethical AI and the societal implications of technology ensures that her solutions are as culturally aware as they are innovative.
+          </p> */}
         </motion.div>
 
       </div>

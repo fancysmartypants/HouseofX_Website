@@ -73,7 +73,7 @@ const Projects = () => {
             className="flex justify-center text-center items-center p-10 bg-primary-red
               max-w-[600px] max-h-[600px] text-2xl font-averia font-semibold"
           >
-            VISUALS EXPERIENCES
+            ENTREPRENEURIAL EXPERIENCES
           </div>
 
 
@@ -94,7 +94,7 @@ const Projects = () => {
             className="flex justify-center text-center items-center p-10 bg-primary-blue
               max-w-[600px] max-h-[600px] text-2xl font-averia font-semibold"
           >
-            MEANINGFUL DESIGNS
+            IMPACT RESEARCH
           </div>
         </motion.div>
       </div>

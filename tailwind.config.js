@@ -5,10 +5,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "primary-blue": "#0055A4",
-        "primary-red": "#D32E2E",
-        "primary-yellow": "#FFCC00",
-        "black": "#000000",
+        "primary-blue": "#BDD4EF",
+        "primary-red": "#FF3939",
+        "primary-yellow": "#F18E1A",
+        "black": "#0B171B",
         "white": "#FFFFFF",
         "grey": "#E0E0E0",
         "dark-grey": "#333333",
@@ -20,7 +20,6 @@ module.exports = {
       }),
       fontFamily: {
         averia: ["'Averia Serif Libre'", "serif"],
-        major: ["'Major Mono Display'", "monospace"],
         custom: ["'MyCustomFont'", "sans-serif"],
       },
       content: {

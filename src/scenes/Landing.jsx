@@ -51,24 +51,27 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="text-6xl font-custom z-10 text-center md:text-start">
-            House of X
+          <h1 className="text-6xl font-custom z-10 text-center md:text-start">
+            X House 
   
-          </p>
+          </h1>
 
           <p className="mt-20 mb-20 text-3xl text-center md:text-start font-averia italic">
-            Where creative technology meets the art of branding.
+            Where Data Science, Innovation, and Inclusivity Converge
           </p>
 
           <p className="mt-10 mb-7 text-xl text-center md:text-start font-averia">
-           House of X is created by a multifaceted talent, (and hopefully team of talents some day) with a belief in cultivating a <span class="font-bold">more</span> neurodiverse future for all. Driven by love for art and science, and a relentless passion for effecting systemic change through the expression of designing better technologies using the language of love.
+            Welcome to X House, a dynamic hub for forward-thinking individuals in data science and machine learning, dedicated to creating a more inclusive and diverse future. We are committed to bridging the gap between society and technology, harnessing the art of data science to craft transformative solutions that drive business success and uplift communities—especially women, neurodiverse individuals, and minorities.
           </p>
           <p className="mb-10 mt-20 text-l text-center md:text-start font-averia">
-             Taste maker and culinary artist <span class="italic">Rono</span> graduated with duo Bsc. majors, with Honors, in Neuroscience, Computational & Systems Biology, now embarking on a journey pursuing a Master in Data Science in Biomedicine. She is a nerd who would like to pave out a new road map for all genders alike.  
+            Initiated by Rono, a Master’s student with dual B.Sc. degrees in Neuroscience and Computational & Systems Biology with Honors from UCLA, X House stands at the cutting edge of applying advanced data science methodologies to real-world challenges. With a Master’s in Data Science in Biomedicine underway, Rono brings a unique combination of scientific expertise, creative problem-solving, and a deep passion for inclusivity to every initiative.
+          </p>
+          <p className="mb-10 mt-20 text-l text-center md:text-start font-averia">
+            Our Learning Center is an integral part of our mission, offering insights, tutorials, and research designed to empower individuals and organizations from all backgrounds. We help you navigate the complexities of the digital age with confidence, ensuring that the future of technology is accessible to everyone.
           </p>
 
           <p className="mb-20 mt-20 text-m text-center md:text-start font-averia italic">
-            "I would like to help small to mid-size businesses transition and adapt gracefully into the digital and AI Age."
+            Join us at X House, where data science meets creativity, inclusivity, and impact.
           </p>
 
         </motion.div>
@@ -96,7 +99,7 @@ const Landing = ({ setSelectedPage }) => {
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
-            Let's talk.
+            Let's talk
           </AnchorLink>
 
           {/* <AnchorLink
